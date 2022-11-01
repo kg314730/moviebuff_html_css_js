@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBuff: Site for Movie Lovers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d13221f6ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.gif" alt="" width="250px">
+        <div class="links">
+            <a href="index.html">Home</a> |
+            <a href="moviesearch.html">Movies Information</a> |
+            <a href="movieGuessor.html">MovieGuessor</a> |
+            <a href="higherLower.html">Higher-Lower</a> |
+        </div>
+    </nav>
+    <div class="searchbox">
+        <input type="text" placeholder="Enter the movie name..." id="movieName">
+        <br>
+        <button onclick="movieSearch()">Search</button>
+    </div>
+    <div class="info">
+        <div class="details">
+            <div class="areas">
+                <div class="container">
+                    <div class="item8">
+                        <img src="images/cinema-screen.png" alt="" id="poster">
+                    </div>
+                    <div class="item1">Title: <span id="title" class="apiInfo" ></span></div>
+                    <div class="item2">Genre: <span id="genre" class="apiInfo" ></span></div>
+                    <div class="item3">Relase Date: <span id="relDate" class="apiInfo" ></span></div>
+                    <div class="item4">Runtime: <span id="runTime" class="apiInfo" ></span></div>
+                    <div class="item5">Director: <span id="director" class="apiInfo" ></span></div>
+                    <div class="item6">Actors: <span id="actor" class="apiInfo" ></span></div>
+                    <div class="item7">Plot: <span id="plot" class="apiInfo" ></span></div>
+                    <div class="item9">IMDB Rating: <span id="rating" class="apiInfo" ></span></div>
+                    <div class="item10">Country: <span id="country" class="apiInfo" ></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="outer" id="outer">
+        <div class="notFound">
+            <center>
+                <h1>Movie Record not Found!</h1>
+                <button onclick="location.href='moviesearch.html'">Go Back</button>
+            </center>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="footer">
+        <center>
+            <h3>For any queries, write to us at:&nbsp;&nbsp;&nbsp;
+                <a href="mailto:customer_care@bookmart.com"><i><h4 style="display: inline;"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;customer_care@moviebuff.com</h4></i></a>
+            </h3>
+            <img src="images/logo.gif" alt="" width="200px">
+        </center>
+    </div>
+</body>
+</html>

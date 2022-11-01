@@ -1,0 +1,457 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    /* background-color: #8BBCCC; */
+    background-color: #F39189;
+}
+nav{
+    background-color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 5px;
+}
+
+.links{
+    display: inline;
+    position: relative;
+    top: -35px;
+    margin-left: 10px;
+}
+nav a{
+    letter-spacing: 1px;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+#right{
+    float: right;
+    position: relative;
+    top: 35px;
+}
+nav a:hover{
+    background-color: #004aad;
+}
+
+.landing #collage{
+    width: 100vw;
+    height: 88vh;
+    opacity: 0.8;
+    background-image: url('images/collage.webp');
+    background-size: cover;
+}
+#camera{
+    display: inline;
+    position: absolute;
+    top: 125px;
+    right: -5px;
+    height: 85%;
+}
+.trapezoid {
+    border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-left: 450px solid #f65a05;
+	height: 100px;
+	width: 125px;
+    position: absolute;
+    top: 183px;
+    left: -750px;
+    animation: blink 2s ease-out infinite;
+}
+@keyframes blink {
+    from{opacity: 0;}
+    to{opacity: 0.7;}
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    padding-top: 10px;
+}
+.landing .left{
+    height: 100%;
+    background-color: rgba(255,255,255,0.758);
+    width: 60%;
+    display: inline-block;
+    clip-path:
+    polygon(0 0, 0 100%, 90% 100%, 60% 0);
+    margin: 0;
+    padding: 0;
+    background-image: none;
+}
+.landing .slogan{
+    padding-top: 80px;
+    padding-left: 30px;
+    width: 70%;
+    font-size: 4.5em;
+    word-wrap: break-word;
+    word-break: break-word;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient(to bottom right, white,green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px black;
+}
+.landing .btn {
+    background: #3498db;
+    background-image: linear-gradient(to bottom, black, black);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    text-shadow: 2px 2px 0px #080808;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 31px;
+    padding: 12px 20px 12px 20px;
+    border: solid #1f628d 15px;
+    text-decoration: none;
+    position: relative;
+    top: 85px;
+    left: 20%;
+}
+.flex-box{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, #1f628d,#93afc0);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.flex-rows{
+    font-size: 1.2em;
+    padding: auto;
+    margin: 5px;
+    text-align: center;
+    border: 15px solid #4C0033;
+    border-style: ridge;
+}
+.flex-rows:hover{
+    transform: translateX(2px) translateY(-4px);
+}
+.flex-rows button {
+    background: #3498db;
+    background-image: linear-gradient(to bottom, #131b21, #0a1218);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  .notFound button {
+    background: #3498db;
+    background-image: linear-gradient(to bottom, #131b21, #0a1218);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  .flex-box h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px whitesmoke;
+  }
+  .flex-rows button:hover {
+    background: #3cb0fd;
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+  .notFound button:hover {
+    background: #3cb0fd;
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+  .searchbox{
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+  }
+  .searchbox input[type='text']{
+    font-size: 1em;
+    padding: 10px 50px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .searchbox button{
+    margin: 5px;
+    font-size: 0.6em;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #051926;
+    background-image: linear-gradient(to bottom, #051926, #020a0f);
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+  }
+  .searchbox button:hover{
+    background: #3cb0fd;
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  }
+  .info{
+    padding: 5px;
+    margin: auto;
+  }
+  .info img{
+    border: 1px solid black;
+  }
+
+  .areas .container{
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+        "item8 item1 item1"
+        "item8 item9 item9"
+        "item8 item2 item2"
+        "item8 item3 item4"
+        "item8 item5 item5"
+        "item8 item6 item6"
+        "item8 item7 item7"
+        "item8 item10 item10"
+        ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr; 
+        font-size: 2em;
+        line-height: 1.1em;
+       text-align: justify;
+       padding-right: 10px;
+    }
+    .areas .item1{
+        grid-area: item1;
+    }
+    .areas .item2{
+        grid-area: item2;
+    }
+    .areas .item3{
+        grid-area: item3;
+    }
+    .areas .item4{
+        grid-area: item4;
+    }
+    .areas .item5{
+        grid-area: item5;
+    }
+    .areas .item6{
+        grid-area: item6;
+    }
+    .areas .item7{
+        grid-area: item7;
+    }
+    .areas .item8{
+        grid-area: item8;
+        padding: 15px;
+        margin: auto;
+    }
+    .areas .item9{
+        grid-area: item9;
+    }
+    .areas .item10{
+        grid-area: item10;
+    }
+    .apiInfo{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 0.9em;
+    }
+    #poster{
+        border: 10px outset #4C6793;
+        padding: 10px;
+    }
+    .notFound h1{
+        color: red;
+        font-size: 5em;
+        animation-name: one;
+        animation-duration: 2s;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+        
+    }
+    @keyframes one {
+        from {opacity: 100%;}
+        to {opacity: 0%}
+    }
+    .notFound{
+        position: absolute;
+        background-color: #B7C4CF;
+        width: 100vw;
+        right: 0;
+        left: 0;
+        top: 250px;
+        margin:auto;
+    }
+    .outer{
+        background-color: rgba(0,0,0,0.8);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        width: 100vw;
+        right: 0;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+    .score{
+        position: relative;
+        margin-left: 400px;
+    }
+    .rules p,label{
+        font-size: 1.5em;
+    }
+    select{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        border: 3px solid black;
+    }
+
+    .rules button{
+        margin: 5px;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background: #051926;
+        background-image: linear-gradient(to bottom, #051926, #020a0f);
+        border-radius: 28px;
+        font-family: Arial;
+        color: #ffffff;
+        padding: 10px 20px 10px 20px;
+      }
+      .rules button:hover{
+        background: #3cb0fd;
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+      }
+      #middlegame button{
+        margin: 5px;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background: #051926;
+        background-image: linear-gradient(to bottom, #051926, #020a0f);
+        border-radius: 28px;
+        font-family: Arial;
+        color: #ffffff;
+        padding: 10px 20px 10px 20px;
+      }
+      #middlegame button:hover{
+        background: #3cb0fd;
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+      }
+      .maingame{
+        display: flex;
+        height: 550px;
+        /* background-color: #004aad; */
+        background-color: #150050;
+        flex-direction: row;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 24px;
+        
+      }
+      .maingame>div {
+        flex: 1 1 1;
+      }
+      #leftgame{
+        text-align: center;
+      }
+      #rightgame{
+        text-align: center;
+      }
+      #midlegame{
+        font-size: 1em;
+      }
+      .maingame img{
+        border: 10px solid black;
+        width: 300px;
+        height: 400px;
+      }
+      .movieNames{
+        font-size: 1.5em;
+        background-color: #020a0f;
+        width: 400px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .playArea{
+        /* height: 450px; */
+        background-color: #150050;
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 28px;
+      }
+      .playArea>div {
+        flex: 1 1;
+      }
+      .playArea img{
+        border: 10px solid black;
+        width: 300px;
+        height: 400px;
+      }
+
+      #inputChecker{
+        text-align: center;
+      }
+      #workingArea input{
+        font-size: 1.5em;
+        text-align: center;
+      }
+      #workingArea #plot{
+        font-size: 1.5em;
+        color: white;
+        padding: 0 10px;
+      }
+      #numAttempt{
+        font-size: 1.5em;
+        color: white;
+      }
+      #workingArea button{
+        margin: 5px;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background: #051926;
+        background-image: linear-gradient(to bottom, #051926, #020a0f);
+        border-radius: 28px;
+        font-family: Arial;
+        color: #ffffff;
+        padding: 10px 20px 10px 20px;
+      }
+      #workingArea button:hover{
+        background: #3cb0fd;
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+      }
+      #middlegame img{
+        width: 90px;
+        height: 90px;
+        border-radius: 60%;
+        border: 1px solid black;
+        visibility: hidden;
+      }

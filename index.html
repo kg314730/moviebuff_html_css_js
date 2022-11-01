@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBuff: Site for Movie Lovers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d13221f6ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.gif" alt="" width="250px">
+        <div class="links">
+            <a href="index.html">Home</a> |
+            <a href="moviesearch.html">Movies Information</a> |
+            <a href="movieGuessor.html">MovieGuessor</a> |
+            <a href="higherLower.html">Higher-Lower</a> |
+        </div>
+    </nav>
+    <div class="landing">
+        <div id="collage">
+            <div class="left">
+                <div class="slogan">
+                    Obsessed with Indian Movies?You have come to the right place
+                </div>
+                <a href="#temp"><input type="button" value="Get Started" class="btn" ></a>
+            </div>
+            <div id="camera">
+                <img src="images/camera.webp" alt="" id="camera">
+                <div class="trapezoid "></div>
+            </div>
+        </div>
+    </div>
+    <div class="temp" id="temp">
+        <div class="flex-box">
+            <h1>Things you can do here...</h1>
+            <div class="flex-rows">
+                <h2>Movie Information</h2>
+                <p>Search for Movie Information like release date, actors, director, IMDB ratings and much more...</p>
+                <button onclick="location.href='moviesearch.html'">Click Here To Search</button>
+            </div>
+            <div class="flex-rows">
+                <h2>MovieGuessor</h2>
+                <p>Get a chance to flaunt your knowledge by guessing movies based on hints!</p>
+                <button onclick="location.href='movieGuessor.html'">Click Here To Play</button>
+            </div>
+            <div class="flex-rows">
+                <h2>Higher-Lower</h2>
+                <p>Put the movie critic inside you to test and predict which movie has lower or higher IMDB rating!</p>
+                <button onclick="location.href='higherLower.html'">Click Here To Play</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <center>
+            <h3>For any queries, write to us at:&nbsp;&nbsp;&nbsp;
+                <a href="mailto:customer_care@bookmart.com"><i><h4 style="display: inline;"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;customer_care@moviebuff.com</h4></i></a>
+            </h3>
+            <img src="images/logo.gif" alt="" width="200px">
+        </center>
+    </div>
+</body>
+</html>

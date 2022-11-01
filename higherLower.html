@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBuff: Site for Movie Lovers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d13221f6ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.gif" alt="" width="250px">
+        <div class="links">
+            <a href="index.html">Home</a> |
+            <a href="moviesearch.html">Movies Information</a> |
+            <a href="movieGuessor.html">MovieGuessor</a> |
+            <a href="higherLower.html">Higher-Lower</a> |
+            <span class="score">Score: <span id="score">0</span></span>
+        </div>
+    </nav>
+    <div class="rules">
+        <h1>How To Play?</h1>
+        <p>Two movie titles will be shown to you. IMDB rating of one movie will be shown, you have to predict whether the rating of other movie is lower or higher. For each correct guess, you get 1 point.</p>
+        <label for="movieIndustry">Choose the Indian Movie Industry: </label>
+        <select name="movieIndustry" id="movieIndustry">
+            <option value="hindi">Hindi</option>
+            <option value="malayalam">Malayalam</option>
+            <option value="marathi">Marathi</option>
+            <option value="tamil">Tamil</option>
+            <option value="telugu">Telugu</option>
+        </select>
+        <button onclick="higherLowerStarter()">Start Game</button>
+    </div>
+    <br>
+    <div class="maingame">
+        <div id="leftGame">
+            <center>
+                <img src="images/cinema-screen.png" alt="" id="game1">
+                <p id="gametitle1" class="movieNames">Movie 1</p>
+                <p class="movieNames" style="margin-bottom: 1px;">Rating: <span id="movieRating1"></span></p>
+            </center>
+            
+        </div>
+        <div id="middlegame">
+            <center>
+                <img src="images/correct.gif" alt="" id="correctAns"><br>
+                <button onclick="lower()" disabled class="gameAct">Lower</button><br><br>
+                <button onclick="higher()" disabled class="gameAct">Higher</button>
+            </center>
+        </div>
+        <div id="rightGame">
+            <center>
+                <img src="images/cinema-screen.png" alt="" id="game2">
+                <p id="gametitle2" class="movieNames">Movie 2</p>
+                <p class="movieNames"style="margin-bottom: 1px;" >Rating: <span id="movieRating2"></span></p>
+            </center>
+        </div>
+    </div>
+    <div class="outer" id="outer">
+        <div class="notFound">
+            <center>
+                <h1>GameOver!</h1>
+                <p style="font-size: 1.5em;">Score: <span id="finalscore" >0</span></p>
+                <button onclick="location.href='higherLower.html'">Go Back</button>
+            </center>
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <center>
+            <h3>For any queries, write to us at:&nbsp;&nbsp;&nbsp;
+                <a href="mailto:customer_care@bookmart.com"><i><h4 style="display: inline;"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;customer_care@moviebuff.com</h4></i></a>
+            </h3>
+            <img src="images/logo.gif" alt="" width="200px">
+        </center>
+    </div>
+</body>
+</html>

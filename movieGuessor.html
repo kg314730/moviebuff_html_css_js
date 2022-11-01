@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBuff: Site for Movie Lovers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d13221f6ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.gif" alt="" width="250px">
+        <div class="links">
+            <a href="index.html">Home</a> |
+            <a href="moviesearch.html">Movies Information</a> |
+            <a href="movieGuessor.html">MovieGuessor</a> |
+            <a href="higherLower.html">Higher-Lower</a> |
+            <span class="score">Score: <span id="guessscore">0</span></span>
+        </div>
+    </nav>
+    <div class="rules">
+        <h1>How To Play?</h1>
+        <p>Vowels are filled for, you have to guess the movie from its plot!</p>
+        <label for="movieIndustry">Choose the Indian Movie Industry: </label>
+        <select name="movieIndustry" id="movieIndustry">
+            <option value="hindi">Hindi</option>
+            <option value="malayalam">Malayalam</option>
+            <option value="marathi">Marathi</option>
+            <option value="tamil">Tamil</option>
+            <option value="telugu">Telugu</option>
+        </select>
+        <button onclick="guessGameStarter()">Start Game</button>
+    </div>
+    <br>
+    <div class="playArea">
+        <div id="poster1">
+            <center>
+                <img src="images/puzzle.png" alt="" id="game1" style="background-color: white">
+            </center> 
+        </div>
+        <div id="workingArea">
+                <center>
+                    <p id="plot" ><span style="font-size: 2em; text-decoration: underline;">Plot</span><br> <span id="plotguessor"></span></p>
+                    <p id="movieName"></p>
+                    <div id="inputChecker">
+                    </div>
+                    <br><br>
+                    <input type="text" id="uranswer" autoComplete="off" maxlength="1"><br><br>
+                    <button onclick="checkMovieName()" disabled class="gameAct">Check Your Input</button>
+                    <p id="numAttempt">Number of attempts left: <span id="attempt"></span></p>
+                </center>
+        </div>
+    </div>
+    <div class="outer" id="outer">
+        <div class="notFound">
+            <center>
+                <h1>GameOver!</h1>
+                <p style="font-size: 1.5em;">Score: <span id="finalscore" >0</span></p>
+                <button onclick="location.href='movieGuessor.html'">Go Back</button>
+            </center>
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <center>
+            <h3>For any queries, write to us at:&nbsp;&nbsp;&nbsp;
+                <a href="mailto:customer_care@bookmart.com"><i><h4 style="display: inline;"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;customer_care@moviebuff.com</h4></i></a>
+            </h3>
+            <img src="images/logo.gif" alt="" width="200px">
+        </center>
+    </div>
+</body>
+</html>
