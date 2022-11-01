@@ -1,6 +1,6 @@
 async function movieSearch(){
     var movieName = document.getElementById("movieName").value.replaceAll(' ','+');
-    var url = "http://www.omdbapi.com/?t=";
+    var url = "https://www.omdbapi.com/?t=";
     var key = "&apikey=50026ec7";
     var url = await fetch(url+movieName+key+"&plot=full");
     var response = await url.json();
@@ -67,7 +67,7 @@ async function startGame(){
 
 }
 async function helper(hindiMovie){
-    var url = "http://www.omdbapi.com/?i=";
+    var url = "https://www.omdbapi.com/?i=";
     var key = "&apikey=50026ec7";
     var max = hindiMovie.length;
         var output = await fetch(url+hindiMovie[idx]+key);
@@ -162,7 +162,7 @@ poster=""
 async function helper2(arr){
     var max = arr.length-1;
     let idx = Math.floor(Math.random()*max);
-    var url = "http://www.omdbapi.com/?i=";
+    var url = "https://www.omdbapi.com/?i=";
     var key = "&apikey=50026ec7";
     var output = await fetch(url+arr[idx]+key);
     var response = await output.json();
